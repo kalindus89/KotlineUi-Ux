@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinUiUx">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".with_navigation_components.MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".old_way.OldwayActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

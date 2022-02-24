@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host_nc"
+    app:startDestination="@id/fragmentOneNc">
+
+    <fragment
+        android:id="@+id/fragmentFourNc"
+        android:name="com.kotlin.kotlinuiux.with_navigation_components.FragmentFourNc"
+        android:label="fragment_four_nc"
+        tools:layout="@layout/fragment_four_nc" />
+    <fragment
+        android:id="@+id/fragmentOneNc"
+        android:name="com.kotlin.kotlinuiux.with_navigation_components.FragmentOneNc"
+        android:label="fragment_one_nc"
+        tools:layout="@layout/fragment_one_nc" />
+    <fragment
+        android:id="@+id/fragmentThreeNc"
+        android:name="com.kotlin.kotlinuiux.with_navigation_components.FragmentThreeNc"
+        android:label="fragment_three_nc"
+        tools:layout="@layout/fragment_three_nc" />
+    <fragment
+        android:id="@+id/fragmentTwoNc"
+        android:name="com.kotlin.kotlinuiux.with_navigation_components.FragmentTwoNc"
+        android:label="fragment_two_nc"
+        tools:layout="@layout/fragment_two_nc" />
+</navigation>

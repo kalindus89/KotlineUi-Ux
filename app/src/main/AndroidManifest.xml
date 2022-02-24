@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinUiUx">
-
+        <activity
+            android:name=".with_floating_bottom.FloatingButtonBnActivity"
+            android:exported="false" />
         <activity
             android:name=".with_navigation_components.MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".old_way.OldwayActivity"
             android:exported="true">

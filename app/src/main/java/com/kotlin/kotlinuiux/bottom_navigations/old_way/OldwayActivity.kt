@@ -1,4 +1,4 @@
-package com.kotlin.kotlinuiux.old_way
+package com.kotlin.kotlinuiux.bottom_navigations.old_way
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

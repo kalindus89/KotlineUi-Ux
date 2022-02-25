@@ -1,12 +1,12 @@
-package com.kotlin.kotlinuiux.with_floating_bottom
+package com.kotlin.kotlinuiux.data_binding.data_binding_1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.kotlin.kotlinuiux.R
 
-class FloatingButtonBnActivity : AppCompatActivity() {
+class DatabindingActivity_1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_floating_button_bn)
+        setContentView(R.layout.activity_databinding1)
     }
 }

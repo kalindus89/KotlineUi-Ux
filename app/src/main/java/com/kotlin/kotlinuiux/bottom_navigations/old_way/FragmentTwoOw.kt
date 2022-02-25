@@ -1,4 +1,4 @@
-package com.kotlin.kotlinuiux.old_way
+package com.kotlin.kotlinuiux.bottom_navigations.old_way
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import com.kotlin.kotlinuiux.R
 
 
-class FragmentOneOw : Fragment() {
-
+class FragmentTwoOw : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +20,7 @@ class FragmentOneOw : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_one_ow, container, false)
+        return inflater.inflate(R.layout.fragment_two_ow, container, false)
     }
 
 }

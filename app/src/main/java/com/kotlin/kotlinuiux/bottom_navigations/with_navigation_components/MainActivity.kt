@@ -1,4 +1,4 @@
-package com.kotlin.kotlinuiux.with_navigation_components
+package com.kotlin.kotlinuiux.bottom_navigations.with_navigation_components
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

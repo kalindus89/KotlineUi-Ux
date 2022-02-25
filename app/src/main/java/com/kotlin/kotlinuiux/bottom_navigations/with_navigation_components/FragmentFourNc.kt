@@ -1,4 +1,4 @@
-package com.kotlin.kotlinuiux.with_navigation_components
+package com.kotlin.kotlinuiux.bottom_navigations.with_navigation_components
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/miHome"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:title="Search"
+        android:id="@+id/miSearch"
+        android:icon="@drawable/ic_baseline_search_24"/>
+
+    <!--just ato aline with floating button. change click disable from the activity class-->
+    <item android:title=""
+        android:id="@+id/placeholder"/>
+
+
+    <item android:title="Profile"
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+    <item android:title="Setting"
+        android:id="@+id/miSettings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+</menu>

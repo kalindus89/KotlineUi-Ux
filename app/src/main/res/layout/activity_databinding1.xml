@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".data_binding.data_binding_1.DatabindingActivity_1">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+        <import type="android.view.View" />
+        <import type="com.kotlin.kotlinuiux.data_binding.data_binding_1.MyUserUtils" />
+
+        <variable
+            name="userModel"
+            type="com.kotlin.kotlinuiux.data_binding.data_binding_1.UserModel" />
+
+        <!--  or import model class
+
+        <import type="android.view.View"/>
+          <import type="com.kotlin.kotlinuiux.data_binding.data_binding_1.UserModel"/>
+         <variable
+             name="userModel"
+             type="UserModel" />-->
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".data_binding.data_binding_1.DatabindingActivity_1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{MyUserUtils.changeName(userModel.FName)}"
+            android:visibility="@{userModel.loggedIn?View.VISIBLE:View.GONE}" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click Me" />
+    </LinearLayout>
+</layout>

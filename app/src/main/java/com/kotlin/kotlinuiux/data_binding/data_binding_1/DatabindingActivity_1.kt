@@ -22,7 +22,7 @@ class DatabindingActivity_1 : AppCompatActivity() {
 
         binding.userModel = myUserModel
 
-        binding.editText1.addTextChangedListener(object: TextWatcher {
+       /* binding.editText1.addTextChangedListener(object: TextWatcher {
             override fun beforeTextChanged(char: CharSequence?, p1: Int, p2: Int, p3: Int) { }
 
             override fun onTextChanged(char: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -33,7 +33,7 @@ class DatabindingActivity_1 : AppCompatActivity() {
             override fun afterTextChanged(p0: Editable?) { }
 
 
-        })
+        })*/
 
 
     }

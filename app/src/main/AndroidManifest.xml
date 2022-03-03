@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinUiUx">
         <activity
+            android:name=".data_binding.data_binding_2_viewModel.DatabindingViewModelActivity"
+            android:exported="false" />
+        <activity
             android:name=".data_binding.data_binding_1.DatabindingActivity_1"
             android:exported="false" />
         <activity
@@ -22,7 +25,7 @@
             android:name=".bottom_navigations.with_navigation_components.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".data_binding.data_binding_2_viewModel.DatabindingViewModelActivity"
+            android:name=".data_binding.data_binding_1_includes_xml.DataBindingWithXmlIncludeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

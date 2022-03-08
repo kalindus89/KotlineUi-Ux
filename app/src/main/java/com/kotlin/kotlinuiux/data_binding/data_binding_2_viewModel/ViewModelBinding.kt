@@ -9,7 +9,7 @@ class ViewModelBinding :ViewModel() {
     val message=MutableLiveData<String>()
 
     fun setMessage(text:String){
-        message.value=text
+        message.value=text //ok
     }
 
 }

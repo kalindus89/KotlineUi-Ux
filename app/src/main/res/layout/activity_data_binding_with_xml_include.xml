@@ -17,6 +17,9 @@
         android:orientation="vertical"
         tools:context=".data_binding.data_binding_1.DatabindingActivity_1">
 
+        <!--One way data binding @{} -->
+        <!--Two way data binding @={} and @Bindable annotation in the class   -->
+
         <include
             layout="@layout/content_layout"
             binding:myUserModel="@{userModel}"

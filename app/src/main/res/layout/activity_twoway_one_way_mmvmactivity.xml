@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".data_binding.data_binding_2way_1way.TwowayOneWayMMVMActivity">
+
+        <TextView
+            android:id="@+id/randomFruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            tools:text="Some Random Fruits"/>
+
+        <Button
+            android:id="@+id/changeRandomFruit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Change Fruit"
+            android:layout_marginTop="10dp"/>
+
+        <!--One way data binding @{} -->
+        <!--Two way data binding @={} and @Bindable annotation in the class   -->
+        <EditText
+            android:id="@+id/newFruit"
+            android:layout_width="250dp"
+            android:hint="Enter a new fruits"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"/>
+
+        <Button
+            android:id="@+id/displayEditContent"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Display Edit Content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/setNewFruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            tools:text="Set New Fruit"/>
+
+        <Button
+            android:id="@+id/setRandomFruitsInsideEditNewFruit"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Display Edit Content"
+            android:background="@color/white"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+</layout>

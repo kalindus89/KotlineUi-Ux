@@ -18,6 +18,10 @@
         android:gravity="center"
         tools:context=".data_binding.data_binding_2_viewModel.DatabindingViewModelActivity">
 
+        <!--One way data binding @{} -->
+        <!--Two way data binding @={} and @Bindable annotation in the class   -->
+
+
         <TextView
             android:id="@+id/getEnterText"
             android:layout_width="wrap_content"

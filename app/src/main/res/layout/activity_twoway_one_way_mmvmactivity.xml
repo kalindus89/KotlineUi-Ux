@@ -5,6 +5,11 @@
 
     <data>
 
+        <variable
+            name="mainViewModel"
+            type="com.kotlin.kotlinuiux.data_binding.data_binding_2way_1way.MainViewModel" />
+
+
     </data>
 
     <LinearLayout
@@ -14,11 +19,15 @@
         android:gravity="center"
         tools:context=".data_binding.data_binding_2way_1way.TwowayOneWayMMVMActivity">
 
+        <!--One way data binding @{} -->
+        <!--Two way data binding @={} and @Bindable annotation in the class   -->
+
         <TextView
             android:id="@+id/randomFruit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30dp"
+            android:text="@{mainViewModel.currentRandomFruitName}"
             tools:text="Some Random Fruits"/>
 
         <Button
@@ -26,14 +35,14 @@
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:text="Change Fruit"
+            android:onClick="@{() -> mainViewModel.onChangeRandomFruitClick()}"
             android:layout_marginTop="10dp"/>
 
-        <!--One way data binding @{} -->
-        <!--Two way data binding @={} and @Bindable annotation in the class   -->
         <EditText
             android:id="@+id/newFruit"
             android:layout_width="250dp"
             android:hint="Enter a new fruits"
+            android:text="@={mainViewModel.editTextContent}"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"/>
 
@@ -42,6 +51,7 @@
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:text="Display Edit Content"
+            android:onClick="@{() -> mainViewModel.onDisplayEditTextContentClick()}"
             android:layout_marginTop="10dp"/>
 
         <TextView
@@ -50,13 +60,15 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:layout_marginTop="10dp"
+            android:text="@{mainViewModel.displayEdittextContent}"
             tools:text="Set New Fruit"/>
 
         <Button
             android:id="@+id/setRandomFruitsInsideEditNewFruit"
             android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:text="Display Edit Content"
+            android:layout_height="60dp"
+            android:onClick="@{() -> mainViewModel.onSelectRandomEditTextFruitName()}"
+            android:text="Select Random Fruit for EditText"
             android:background="@color/white"
             android:layout_marginTop="30dp"/>
 
